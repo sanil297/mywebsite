@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>
-        Token Bridge
+        Tap Check
     </title>
 
     <link rel="stylesheet" href="style.css">
@@ -32,7 +32,7 @@
                 <span>/</span>
                 <a href="index.html#toolkit">Toolkit</a>
                 <span>/</span>
-                <span class="bdy18-bold">Token Bridge</span>
+                <span class="bdy18-bold">Tap Check</span>
             </div>
 
             <div class="menu-btn" id="menuBtn">
@@ -51,7 +51,7 @@
                 </span>
 
                 <h1 class="hdln40-bld">
-                    Token Bridge
+                    Tap Check
                 </h1>
 
             </div>
@@ -66,65 +66,63 @@
         <!-- CONTENT GRID -->
 
         <div class="workflow-problem-grid margin-bottom-100">
-
             <div>
-                <img src="assets/home_5.png" alt="">
+                <img src="assets/home_7.png" alt="">
             </div>
-
             <div>
                 <h3 class="lbl24-bld">
-                    Variable to JSON Transformation Engine
+                    Accessibility Validation Engine
                 </h3>
-
                 <p class="bdy18 txt2 margin-top-24 margin-bottom-40">
-                    Converts Figma variables into structured, implementation-ready tokens—applying transformation logic
-                    directly at export.
+                    A Figma plugin that validates touch targets and interaction affordances before developer handoff.
                 </p>
-
-                <div class="token-note">
-                    Design → Transformation → Code
-                </div>
-
             </div>
-
         </div>
 
         <!-- SECTION -->
 
         <div class="workflow-problem-grid margin-bottom-100">
-
             <div>
                 <h3 class="lbl24-bld">
                     What's the problem
                 </h3>
             </div>
-
             <div>
                 <p class="bdy18 txt2">
-                    Figma variables are often raw, loosely typed, and inconsistent—requiring manual cleanup before use
-                    in code.
+                    Interactive components often appear visually correct while failing usability and accessibility
+                    standards due to:
+                </p>
+                <ul class="workflow-list txt2">
+                    <li>Small touch targets</li>
+                    <li>Inconsistent clickable areas</li>
+                    <li>Missing interaction affordances</li>
+                    <li>Compressed spacing around actions</li>
+                </ul>
+
+                <p class="bdy18 txt2 margin-top-24 margin-bottom-40">
+                    These issues are difficult to catch manually across large design systems and product flows.
                 </p>
             </div>
-
         </div>
 
         <!-- SECTION -->
 
         <div class="workflow-problem-grid margin-bottom-100">
-
             <div>
                 <h3 class="lbl24-bld">
                     What this plugin does
                 </h3>
             </div>
-
             <div>
                 <p class="bdy18 txt2">
-                    Applies a transformation layer during export—producing clean, structured, and usable tokens from the
-                    start.
+                    Scans selected frames and components to identify layers that fail recommended touch target and
+                    interaction standards.
+                </p>
+                <br>
+                <p class="bdy18 txt2">
+                    The plugin highlights problematic areas and suggests actionable fixes directly inside Figma.
                 </p>
             </div>
-
         </div>
 
         <!-- CAPABILITIES -->
@@ -139,17 +137,15 @@
 
             <div>
                 <ul class="workflow-list txt2 margin-bottom-40">
-                    <li>Infers token types automatically</li>
-                    <li>Normalizes values for runtime</li>
-                    <li>Preserves relationships (alias-aware)</li>
-                    <li>Separates color and opacity</li>
-                    <li>Organizes tokens (ref → sys → comp)</li>
-                    <li>Exports structured JSON</li>
+                    <li>Detects small touch targets</li>
+                    <li>Identifies inaccessible clickable areas</li>
+                    <li>Validates interaction affordances</li>
+                    <li>Highlights problematic components visually</li>
+                    <li>Suggests touch-area improvements</li>
+                    <li>Supports scalable accessibility reviews</li>
                 </ul>
-
                 <div class="token-note">
-                    Built for design-to-code workflows—structuring tokens, normalizing values, and preserving
-                    relationships by default.
+                    Built to improve interaction quality and accessibility directly within Figma.
                 </div>
             </div>
 
@@ -169,9 +165,10 @@
                         Before
                     </h3>
                     <ul class="workflow-list txt2">
-                        <li>Raw exports</li>
-                        <li>Manual interoretation</li>
-                        <li>Flattened values</li>
+                        <li>Manual QA workflows</li>
+                        <li>Inconsistent clickable areas</li>
+                        <li>Hidden interaction issues</li>
+                        <li>Difficult accessibility reviews</li>
                     </ul>
                 </div>
                 <div class="compare-card">
@@ -179,9 +176,10 @@
                         After
                     </h3>
                     <ul class="workflow-list txt2">
-                        <li>Structured tokens</li>
-                        <li>Typed & normalized values</li>
-                        <li>Implementation-ready output</li>
+                        <li>Automated validation workflows</li>
+                        <li>Visible interaction issues</li>
+                        <li>Accessibility-aware components</li>
+                        <li>Developer-ready handoff</li>
                     </ul>
                 </div>
             </div>
@@ -197,14 +195,18 @@
             </div>
             <div>
                 <p class="bdy18 txt2 margin-bottom-20">
-                    The plugin generates structured JSON that is:
+                    Validation workflows that help teams create interfaces that are:
                 </p>
                 <ul class="workflow-list txt2">
-                    <li>Typed</li>
-                    <li>Alias-aware</li>
-                    <li>Mode-compatible</li>
-                    <li>Ready for integration</li>
+                    <li>Accessibility-aware</li>
+                    <li>Easier to interact with</li>
+                    <li>Visually consistent</li>
+                    <li>Ready for implementation</li>
                 </ul>
+
+                <p class="bdy18 txt2 margin-top-24">
+                    The plugin surfaces actionable fixes for improving touch targets and interaction usability.
+                </p>
             </div>
         </div>
 
@@ -218,8 +220,8 @@
             </div>
             <div>
                 <p class="bdy18 txt2 margin-bottom-20">
-                    Eliminates manual cleanup and ensures tokens are consistent, connected, and ready for
-                    implementation.
+                    Improves interaction quality before implementation by catching usability and accessibility issues
+                    early in the workflow.
                 </p>
             </div>
         </div>
