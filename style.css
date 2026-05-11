@@ -12,7 +12,7 @@
     --txt2: #B9BEC6;
     --txt3: #7D8490;
 
-    --highlight: #D0FF3F;
+    --highlight: #B8E62E;
 
     --stroke: #252932;
 
@@ -315,14 +315,32 @@ a {
 }
 
 .hero-scroll {
-    margin-top: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: var(--txt2);
-    font-size: 40px;
-    line-height: 1;
-    /* transform: scaleX(0.6) scaleY(1.6); */
+    margin-top: 80px;
+}
+
+/* remove default anchor styles */
+.scroll-arrow {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: var(--txt1);
+    text-decoration: none;
+}
+
+/* arrow head */
+.scroll-arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--txt1);
+    border-bottom: 2px solid var(--txt1);
+    transform: translateX(-50%) rotate(45deg);
 }
 
 .hero-image {
@@ -477,14 +495,27 @@ a {
 
 .toolkit-border-section {
     border: 1px solid var(--stroke);
-    padding: 48px 40px;
     margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding: 48px 40px 60px;
+}
+
+.card-footer {
+    padding: 16px 0px;
+    border-top: 1px solid var(--stroke);
+    color: var(--txt2);
+    text-align: center;
 }
 
 .toolkit-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 60px;
 }
 
 .tool-card {
@@ -528,7 +559,7 @@ a {
 .work-list {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 100px;
 }
 
 .work-item {
@@ -571,25 +602,20 @@ FOOTER
 /* MAIN */
 
 .footer-main {
-
-    min-height: 640px;
-
+    /* min-height: 640px; */
     padding: 40px 0;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
     gap: 120px;
+    background: var(--bg2);
 }
 
 /* LEFT */
 
 .footer-left {
-
     display: flex;
     flex-direction: column;
-
     gap: 8px;
 }
 
@@ -600,12 +626,9 @@ FOOTER
 /* RIGHT */
 
 .footer-right {
-
     display: flex;
     flex-direction: column;
-
     gap: 24px;
-
     max-width: 620px;
 }
 
@@ -616,41 +639,30 @@ FOOTER
 /* CONTACT */
 
 .footer-contact {
-
     display: flex;
     flex-direction: column;
-
     gap: 4px;
 }
 
 .footer-contact a {
-
     color: var(--txt1);
-
     text-decoration: none;
-
     width: fit-content;
 }
 
 /* SOCIALS */
 
 .footer-socials {
-
     display: flex;
     align-items: center;
-
     gap: 32px;
 }
 
 .social-link {
-
     display: flex;
     align-items: center;
-
     gap: 10px;
-
     color: var(--txt1);
-
     text-decoration: none;
 }
 
@@ -665,13 +677,9 @@ FOOTER
 /* BOTTOM */
 
 .footer-bottom {
-
     border-top: 1px solid rgba(215, 255, 63, 0.4);
-
-    background: var(--bg2);
-
+    background: var(--bg3);
     padding: 32px 24px;
-
     text-align: center;
 }
 
@@ -684,15 +692,10 @@ FOOTER
 @media (max-width: 900px) {
 
     .footer-main {
-
         min-height: auto;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 80px;
-
         padding: 80px 24px;
     }
 
@@ -1275,4 +1278,80 @@ RESUME PAGE
         height: 900px;
     }
 
+}
+
+/* =========================================
+LIVE TEXT
+========================================= */
+
+.footer-live {
+
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DOT */
+
+.footer-live .live-dot {
+
+    position: absolute;
+
+    left: -28px;
+}
+
+
+.live-text {
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+/* DOT */
+
+.live-dot {
+
+    border-radius: 50%;
+
+    background: var(--highlight);
+
+    flex-shrink: 0;
+
+    animation: livePulse 1.8s infinite ease-in-out;
+}
+
+/* SIZES */
+
+.dot-sm {
+    width: var(--mt8);
+    height: var(--mt8);
+}
+
+.dot-lg {
+    width: var(--mt12);
+    height: var(--mt12);
+}
+
+/* ANIMATION */
+
+@keyframes livePulse {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
