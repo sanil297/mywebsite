@@ -284,9 +284,21 @@ a {
     border-bottom: 1px solid var(--stroke);
 }
 
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
+    .nav-links {
+        gap: 28px !important;
+    }
+}
+
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 8px;
 }
 
 .nav-links a {
@@ -601,6 +613,10 @@ FOOTER
 
 /* MAIN */
 
+.footer {
+    background: var(--bg2);
+}
+
 .footer-main {
     /* min-height: 640px; */
     padding: 40px 0;
@@ -608,7 +624,6 @@ FOOTER
     justify-content: space-between;
     align-items: flex-end;
     gap: 120px;
-    background: var(--bg2);
 }
 
 /* LEFT */
@@ -751,6 +766,10 @@ FOOTER
         display: none;
     }
 
+    .nav-links span {
+        display: none;
+    }
+    
     .nav-links.active {
         display: flex;
     }
