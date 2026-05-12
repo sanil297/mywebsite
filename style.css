@@ -332,7 +332,48 @@ a {
     margin-top: 80px;
 }
 
-/* remove default anchor styles */
+.scroll-arrow {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 70px;
+
+    text-decoration: none;
+}
+
+/* actual line */
+.scroll-arrow::before {
+    content: "";
+    width: 2px;
+    height: 50px;
+    background: var(--txt1);
+    position: absolute;
+    top: 0;
+}
+
+/* arrow head */
+.scroll-arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--txt1);
+    border-bottom: 2px solid var(--txt1);
+
+    transform: translateX(-50%) rotate(45deg);
+}
+/* .hero-scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
 .scroll-arrow {
     position: relative;
     display: inline-block;
@@ -342,7 +383,6 @@ a {
     text-decoration: none;
 }
 
-/* arrow head */
 .scroll-arrow::after {
     content: "";
     position: absolute;
@@ -353,7 +393,7 @@ a {
     border-right: 2px solid var(--txt1);
     border-bottom: 2px solid var(--txt1);
     transform: translateX(-50%) rotate(45deg);
-}
+} */
 
 .hero-image {
     flex: 0 0 40%;
