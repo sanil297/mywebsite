@@ -135,6 +135,9 @@ img {
     width: 100%;
     display: block;
     object-fit: cover;
+    image-rendering: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 
@@ -192,7 +195,7 @@ a {
     font-weight: var(--fw-semibold);
 }
 
-.bdy18-bold {
+.bdy18-bld {
     font-size: var(--bdy18);
     line-height: var(--lh-28);
     font-weight: var(--fw-semibold);
@@ -368,32 +371,6 @@ a {
 
     transform: translateX(-50%) rotate(45deg);
 }
-/* .hero-scroll {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.scroll-arrow {
-    position: relative;
-    display: inline-block;
-    width: 2px;
-    height: 50px;
-    background: var(--txt1);
-    text-decoration: none;
-}
-
-.scroll-arrow::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid var(--txt1);
-    border-bottom: 2px solid var(--txt1);
-    transform: translateX(-50%) rotate(45deg);
-} */
 
 .hero-image {
     flex: 0 0 40%;
@@ -616,34 +593,49 @@ a {
 
 .work-item {
     display: grid;
-    grid-template-columns: 140px 1fr auto;
-    gap: 40px;
+    grid-template-columns: 180px 1fr auto;
+    gap: 30px;
     align-items: start;
 }
 
-.work-item img {
-    height: 120px;
+/* LOGO */
+
+.work-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.work-logo img {
+    width: 152px;
+    height: 140px;
     object-fit: cover;
 }
 
-.work-content h3 {
-    margin: 8px 0 24px;
+/* CENTER */
+
+.work-main h3 {
+    color: var(--txt1);
 }
 
-.work-content span {
-    color: var(--highlight);
-    display: block;
-    margin-bottom: 20px;
-}
+/* CTA */
 
-.work-content p {
-    color: var(--txt3);
-    max-width: 700px;
+.work-cta {
+    align-self: center;
 }
 
 .work-link {
     color: var(--highlight);
     white-space: nowrap;
+}
+
+/* DETAIL CARD */
+
+.work-detail-card {
+    width: 90%;
+    background: var(--bg2);
+    padding: 24px;
+    margin: -30px 0px 0px 48px;
+    align-self: center;
 }
 
 
@@ -809,7 +801,7 @@ FOOTER
     .nav-links span {
         display: none;
     }
-    
+
     .nav-links.active {
         display: flex;
     }
@@ -915,9 +907,9 @@ WORKFLOW PAGE
 }
 
 .workflow-caption {
-    margin-top: 16px;
     color: var(--txt3);
     font-size: 12px;
+    text-align: center;
 }
 
 .insight-divider-na {
@@ -1206,6 +1198,10 @@ MAPPING TABLE
     margin-bottom: 20px;
 }
 
+.margin-bottom-24 {
+    margin-bottom: 24px;
+}
+
 .margin-bottom-40 {
     margin-bottom: var(--space-40);
 }
@@ -1226,6 +1222,14 @@ MAPPING TABLE
     margin-bottom: var(--space-160);
 }
 
+.margin-top-0 {
+    margin-top: 0px;
+}
+
+.margin-top-16 {
+    margin-top: 16px !important;
+}
+
 .margin-top-20 {
     margin-top: 20px;
 }
@@ -1240,6 +1244,10 @@ MAPPING TABLE
 
 .margin-top-60 {
     padding-top: 60px;
+}
+
+.margin-top-70 {
+    padding-top: 70px;
 }
 
 .margin-top-80 {

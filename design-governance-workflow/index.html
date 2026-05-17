@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        Design Governance
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+        <div class="page-container navbar-inner">
+            <a href="/">
+                <img class="logo_img" src="/assets/sanil297_logo.png" alt="">
+            </a>
+            <nav class="nav-links bdy18 txt2" id="navLinks">
+                <a href="/">Home</a>
+                <span>/</span>
+                <a href="/#workflow">Workflow</a>
+                <span>/</span>
+                <span class="bdy18-bld">Design Governance</span>
+            </nav>
+            <div class="menu-btn" id="menuBtn">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+
+        <!-- HERO -->
+
+        <section class="workflow-hero">
+
+            <div class="workflow-hero-grid">
+
+                <div>
+
+                    <span class="section-label mt12-bld">
+                        DESIGN VALIDATION
+                    </span>
+
+                    <h1 class="hdln40-bld">
+                        Design Governance Workflow
+                    </h1>
+
+                    <div class="tag-group">
+
+                        <span class="mt12">M3 MIGRATION</span>
+                        <span class="mt12">VARIABLES</span>
+                        <span class="mt12">Token Structure</span>
+                        <span class="mt12">FLUTTER</span>
+
+                    </div>
+
+                    <p class="bdy18 txt2">
+                        Validates token usage, raw values, and touch target accessibility directly inside Figma.
+                    </p>
+
+                </div>
+
+                <a href="#related-tooling" class="btn btn-secondary bdy18-bld">
+                    Related Tooling
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ROOT CAUSE -->
+
+        <section class="workflow-problem-section">
+
+            <div class="workflow-problem-grid">
+
+                <!-- IMAGE -->
+
+                <div class="workflow-problem-visual">
+
+                    <img src="/assets/design_governance_1.jpg" alt="">
+
+                    <div class="workflow-caption">
+                        Design intent vs Code representation
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+
+                <div class="workflow-problem-content">
+
+                    <div class="workflow-copy-block">
+
+                        <h2 class="lbl24-bld margin-bottom-16">
+                            Root Cause
+                        </h2>
+
+                        <p class="bdy18 txt2">
+                            As the design system scaled, maintaining consistency across Figma files became difficult.
+                            <br><br>
+                            Common issues included:
+                        </p>
+
+                        <ul class="workflow-list margin-top-0 bdy18 txt2">
+                            <li>
+                                Raw colors instead of variables
+                            </li>
+                            <li>
+                                Hardcoded spacing and radius values
+                            </li>
+                            <li>
+                                Missing text styles
+                            </li>
+                            <li>
+                                Components not linked to design tokens
+                            </li>
+                            <li>
+                                Small touch targets that fail accessibility standards
+                            </li>
+                            <li>
+                                Inconsistent design quality before developer handoff
+                            </li>
+                        </ul>
+
+                        <p class="bdy18 txt2 margin-top-24">
+                            Manual design QA became difficult to maintain across large Figma libraries.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSIGHT -->
+
+        <section class="workflow-insight">
+
+            <div class="insight-divider"></div>
+
+            <span class="section-label mt8-bld ">
+                KEY INSIGHT
+            </span>
+
+            <p class="bdy18">
+                Quality assurance moved directly into the design workflow through automated validation plugins.
+            </p>
+
+            <div class="insight-divider-bottom"></div>
+        </section>
+
+
+        <section class="workflow-problem-section border-section">
+            <div class="workflow-problem-grid">
+
+                <!-- IMAGE -->
+                <div class="workflow-problem-visual">
+                    <h2 class="lbl36-bld margin-bottom-16">
+                        Governance Layer
+                    </h2>
+                    <img src="/assets/design_governance_2.jpg" alt="">
+
+                    <div class="workflow-caption">
+                        Design Governance Layer
+                    </div>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="workflow-problem-content bdy18 txt2">
+                    <div class="margin-bottom-80">
+                        <h2 class="bdy18-bld margin-bottom-16">
+                            Variable Validator
+                        </h2>
+                        <p class="bdy18 txt2">
+                            A governance plugin designed to scan Figma files for raw values, missing token usage, and
+                            inconsistent design system adoption patterns.
+                            <br><br>
+                            The plugin helps identify areas where components drift away from semantic token structures
+                            and
+                            design system conventions.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="bdy18-bld margin-bottom-16">
+                            Tap Check
+                        </h2>
+                        <p class="bdy18 txt2">
+                            A lightweight validation plugin created to identify interactive components that do not meet
+                            recommended touch target and accessibility standards.
+                            <br><br>
+                            The workflow helps surface usability and accessibility issues before developer handoff.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOTE -->
+
+            <div class="note bdy18">
+                The governance layer introduced automated quality checks for token usage, accessibility, and developer
+                handoff readiness.
+            </div>
+        </section>
+
+
+        <section class="workflow-problem-section">
+
+            <h2 class="lbl36-bld margin-bottom-16">
+                Validation Workflow
+            </h2>
+
+            <p class="bdy18 txt2 margin-bottom-100">
+                The workflow validates existing Figma files for raw values, missing tokens, spacing inconsistencies,
+                and
+                disconnected styles before standardizing them into scalable system structures.
+            </p>
+
+            <div class="workflow-problem-grid">
+
+                <!-- STEP 1 -->
+
+                <div class="workflow-problem-content bdy18">
+                    <div class="margin-bottom-80">
+                        <p class="mt12-bld txt2">
+                            STEP 1
+                        </p>
+                        <h2 class="lbl24-bld margin-bottom-40">
+                            Scan Design Files
+                        </h2>
+                        <p class="bdy18 txt2">
+                            Designers run the plugins directly inside Figma on selected screens or components.
+                            <br><br>
+                            The system scans for:
+                        </p>
+                        <ul class="workflow-list margin-top-0 bdy18 txt2">
+                            <li>
+                                Raw values
+                            </li>
+                            <li>
+                                Missing tokens
+                            </li>
+                            <li>
+                                Spacing inconsistencies
+                            </li>
+                            <li>
+                                Small touch targets
+                            </li>
+                            <li>
+                                Missing style connections
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="workflow-problem-visual">
+                    <img src="/assets/design_governance_3.jpg" alt="">
+                    <div class="workflow-caption">
+                        Token, Style & Layer Detection
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insight -->
+            <div class="insight-divider margin-top-20"></div>
+
+            <div class="workflow-problem-grid">
+
+                <!-- STEP 2 -->
+
+                <div class="workflow-problem-content bdy18">
+                    <div class="margin-bottom-80">
+                        <p class="mt12-bld txt2">
+                            STEP 2
+                        </p>
+                        <h2 class="lbl24-bld margin-bottom-40">
+                            Highlight Issues
+                        </h2>
+                        <p class="bdy18 txt2">
+                            The plugins visually highlight problematic layers and components inside the file.
+                            <br><br>
+                            This helps designers quickly:
+                        </p>
+                        <ul class="workflow-list margin-top-0 bdy18 txt2">
+                            <li>
+                                Identify violations
+                            </li>
+                            <li>
+                                Update variables
+                            </li>
+                            <li>
+                                Fix spacing
+                            </li>
+                            <li>
+                                Improve accessibility
+                            </li>
+                            <li>
+                                Reconnect styles
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="workflow-problem-visual">
+                    <img src="/assets/design_governance_4.jpg" alt="">
+                    <div class="workflow-caption">
+                        Issue Detection & Validation
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insight -->
+            <div class="insight-divider margin-top-20"></div>
+
+            <div class="workflow-problem-grid">
+
+                <!-- STEP 3 -->
+
+                <div class="workflow-problem-content bdy18">
+                    <div class="margin-bottom-80">
+                        <p class="mt12-bld txt2">
+                            STEP 3
+                        </p>
+                        <h2 class="lbl24-bld margin-bottom-40">
+                            Review & Fix
+                        </h2>
+                        <p class="bdy18 txt2">
+                            Designers review flagged layers and reconnect them back to approved design system patterns
+                            before developer handoff.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="workflow-problem-visual">
+                    <img src="/assets/design_governance_5.jpg" alt="">
+                    <div class="workflow-caption">
+                        Review & Standardization
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insight -->
+            <div class="insight-divider margin-top-20"></div>
+
+            <div class="workflow-problem-grid">
+
+                <!-- STEP 4 -->
+
+                <div class="workflow-problem-content bdy18">
+                    <div class="margin-bottom-80">
+                        <p class="mt12-bld txt2">
+                            STEP 4
+                        </p>
+                        <h2 class="lbl24-bld margin-bottom-40">
+                            Validate Handoff Readiness
+                        </h2>
+                        <p class="bdy18 txt2">
+                            Final validation ensures components follow token standards, accessibility requirements, and
+                            implementation-ready design patterns.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="workflow-problem-visual">
+                    <img src="/assets/design_governance_6.jpg" alt="">
+                    <div class="workflow-caption">
+                        Implementation Readiness Check
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insight -->
+            <div class="insight-divider margin-top-20"></div>
+        </section>
+
+        <!-- ROOT CAUSE -->
+
+        <section class="workflow-problem-section">
+
+            <div class="workflow-problem-grid">
+
+                <!-- CONTENT -->
+
+                <div class="workflow-problem-content">
+
+                    <div class="workflow-copy-block">
+
+                        <h2 class="lbl24-bld margin-bottom-16">
+                            System Summary
+                        </h2>
+
+                        <p class="bdy18 txt2">
+                            The Design Governance Workflow introduced a lightweight quality-assurance layer directly
+                            inside Figma.
+                            <br><br>
+                            Instead of relying solely on manual reviews, the governance workflows helped teams validate:
+                        </p>
+
+                        <ul class="workflow-list bdy18 txt2">
+                            <li>
+                                Token usage consistency
+                            </li>
+                            <li>
+                                Semantic design alignment
+                            </li>
+                            <li>
+                                Accessibility touch targets
+                            </li>
+                            <li>
+                                Developer handoff readiness
+                            </li>
+                        </ul>
+
+                        <p class="bdy18 txt2 margin-top-24">
+                            before designs moved into implementation.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+
+                <div class="workflow-problem-visual">
+
+                    <img src="/assets/design_governance_1.jpg" alt="">
+
+                    <div class="workflow-caption">
+                        Design intent vs Code representation
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INSIGHT -->
+
+        <section class="workflow-insight">
+
+            <div class="insight-divider"></div>
+
+            <span class="section-label mt8-bld ">
+                KEY INSIGHT
+            </span>
+
+            <p class="bdy18">
+                Governance workflows improved design quality, accessibility compliance, and developer handoff
+                reliability at scale.
+            </p>
+
+            <div class="insight-divider-bottom"></div>
+        </section>
+
+        <!-- Related Tooling -->
+
+        <section class="section margin-bottom-160" id="related-tooling">
+            <div class="toolkit-border-section">
+                <div class="content">
+                    <div class="section-header">
+                        <h2 class="hdln40-bld margin-bottom-20">
+                            Related Tooling
+                        </h2>
+                    </div>
+
+                    <div class="toolkit-grid">
+                        <div class="tool-card">
+                            <img src="/assets/home_7.png" alt="">
+                            <h3 class="lbl24-bld">
+                                Tap Check
+                            </h3>
+                            <p class="bdy18">
+                                Detects inaccessible tap targets and ensures usability compliance
+                            </p>
+                            <a href="/tapcheck" class="work-link lbl18-bld margin-top-100">
+                                View Tool →
+                            </a>
+                        </div>
+
+                        <div class="tool-card">
+                            <img src="/assets/home_8.png" alt="">
+                            <h3 class="lbl24-bld">
+                                Token Validator
+                            </h3>
+                            <p class="bdy18">
+                                Identifies raw values and enforces token usage to maintain system consistency
+                            </p>
+                            <a href="/token-validator" class="work-link lbl18-bld margin-top-100">
+                                View Tool →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+
+        <!-- MAIN -->
+
+        <div class="page-container footer-main">
+
+            <!-- LEFT -->
+
+            <div class="footer-left">
+
+                <h2 class="hdln40-bld">
+                    Sanil Modi
+                </h2>
+
+                <p class="bdy18 text2">
+                    Product Designer — Design Systems & Tooling
+                </p>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="footer-right">
+
+                <p class="bdy18 footer-note">
+                    Design systems, tooling, and scalable workflows
+                </p>
+
+                <div class="footer-contact">
+
+                    <a href="mailto:sanil297@gmail.com" class="lbl24-bld">
+                        sanil297@gmail.com
+                    </a>
+
+                    <a href="tel:+918871368690" class="lbl24-bld">
+                        +91 88713 66869
+                    </a>
+
+                </div>
+
+                <div class="footer-socials">
+
+                    <a href="https://www.linkedin.com/in/sanil297" target="_blank" class="social-link bdy18-bld">
+                        <img class="linkedIn" src="/assets/linkedin.svg" alt="">
+                    </a>
+
+                    <a href="https://medium.com/@sanil297" target="_blank" class="social-link bdy18-bld">
+                        <img class="medium" src="/assets/medium.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-live">
+                <span class="live-dot dot-lg"></span>
+
+                <p class="bdy18">
+                    Open to Product Design & Systems Roles
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
